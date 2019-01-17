@@ -239,7 +239,7 @@ padding: 0;
 }
 /*-- //Reset-Code --*/
 .back-image {
-background:#F7F8FE;
+
 min-height: 100vh;
 }
 h1.header-w3ls {
@@ -287,11 +287,12 @@ font-weight: bold;
   color: #777;
   text-align: center;
 }
-.login-img{ width:50%;}
+.login-img{ width:50%;    text-align: center;
+    display: inline-block;}
 /*-- form-code--*/
 .main {
   padding: 2em 2em 2em;
-  width: 22%;
+  width: 27%;
   margin: 0px auto;
   background: #fff;
   -webkit-box-shadow: 0 10px 48px rgba(30, 107, 174, 0.1), 0 1px 1px rgba(255, 248, 254, 0.61);
@@ -339,7 +340,7 @@ color: #777;
   color: #fff;
   font-size: 12px;
       float: right;
-  border-radius: 5px;
+  border-radius: 5px !important;
   font-weight: 400;
   border: none;
   padding: 8px 0px;
@@ -361,7 +362,7 @@ color: #777;
   color: rgb(0, 130, 255);
   font-size: 12px;
       float: right;
-  border-radius: 5px;
+  border-radius: 5px !important;
   font-weight: 400;
   border: none;
   padding: 8px 0px;
@@ -377,7 +378,7 @@ color: #777;
 }
 
 button:hover {
-color: #fff;
+color: #fff !important;
 background:#1786E5;
 }
 /*-- form-code--*/
@@ -543,7 +544,7 @@ height: 98px;
 }
 @media(max-width:1366px){
 .main {
-width: 23%;
+width: 27%;
 }
 .its-sign-in h2 {
 margin: 1.3em 0em .8em;
