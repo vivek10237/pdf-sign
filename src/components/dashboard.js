@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Nav,Button } from 'react-bootstrap';
+import { BrowserRouter as Router, Switch , Route } from "react-router-dom";
 import NavBar from './nav.js';
+import Frontpage from './frontpage.js';
+import AddUser from './adduser.js';
+import UserList from './userlist.js';
 import './../css/dashboardcss/style.css';
 import './../css/dashboardcss/custom.css';
 class dashboard extends Component{
@@ -11,15 +15,11 @@ class dashboard extends Component{
      	  <NavBar />
       <div id="page-wrapper" className="gray-bg dashbard-1">
        <div className="content-main">
-       <div class="banner">
-
-       <h2>
-       <a href="#">Home</a>
-       <i className="fa fa-angle-right"></i>
-       <span>Dashboard</span>
-       </h2>
-       </div>
-           
+         <Switch>
+             <Route  exact path='/dashboard' component={Frontpage} />
+             <Route  path ='/dashboard/adduser' component={AddUser} />
+             <Route  path ='/dashboard/userlist' component={UserList} />
+         </Switch>
        </div>
        </div>
         </div>

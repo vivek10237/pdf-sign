@@ -1322,6 +1322,8 @@ label.control-label {
     color: #000;
     font-size: 0.9em;
     margin: 0;
+    display: block !important;
+    text-align: left;
 }
 .form-group1 input[type="text"],.form-group1 textarea,
 .form-group1 input[type="password"],.form-group1 input[type="date"]{
@@ -1333,6 +1335,11 @@ label.control-label {
     color: #999;
     margin-top: 0.5em;
     font-family: 'Muli-Regular';
+}
+.form-group1 input[type="text"]::placeholder,.form-group1 textarea::placeholder,
+.form-group1 input[type="password"]::placeholder,.form-group1 input[type="date"]::placeholder {
+  color: #9999998a;
+  font-weight: 400;
 }
 .form-group1 textarea{
 	min-height: 100px;
